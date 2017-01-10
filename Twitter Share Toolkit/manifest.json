@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter Share Toolkit",
+  "description": "This extension allows you to share text,link,image and page on twitter",
+  "version": "1.0",  
+  "icons":{
+    "64":"twitter-bird.png",
+    "32":"twitter-bird.png",
+    "16":"twitter-bird.png",
+    "128":"twitter-bird.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+   "permissions": [
+          "contextMenus"
+    ]
+}
