@@ -1,1 +1,0 @@
-document.write("Hey extension");
