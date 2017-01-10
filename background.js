@@ -1,4 +1,10 @@
-//alert(document.location);
-chrome.runtime.onMessage.addListener(function(response,sender,sendresponse){
-        alert(response);
+//available only in background environment
+chrome.contextMenus.create({
+    title:"Twitter Social Toolkit",
+    contexts:["selection"],
+    onclick:myfunction 
 });
+
+function myfunction(selectedText){
+    alert(selectedText.selectionText);
+}

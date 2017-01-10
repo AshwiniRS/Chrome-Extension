@@ -1,37 +1,18 @@
 {
   "manifest_version": 2,
-
   "name": "Getting started example",
   "description": "This extension shows a Google Image search result for the current page",
-  "version": "1.0",
-
-//tells chrome when I click on extension what should be default html file
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-
-  //icons = 64*64 used in chrome://extensions menu
-  //icons = 16*16 used in right click drop down
-
+  "version": "1.0",  
   "icons":{
-    "64":"icon.png"
+    "64":"icon.png",
+    "32":"icon.png",
+    "16":"icon.png",
+    "128":"icon.png"
   },
-  
-//1. isolated environment - background scripts
-//2. extension environment - in the popup box of extension
-// user page environment - within context of webpage
-    
-  //backgrund page
-      "background": {
+  "background": {
     "scripts": ["background.js"]
   },
-  //user page environment
-  "content_scripts": [
-    {
-      "matches": ["http://*/*","https://*/*"], //on every single page of protocol http
-      //"css": ["mystyles.css"],
-      "js": ["myscript.js"]
-    }
-  ]
+   "permissions": [
+          "contextMenus"
+    ]
 }
