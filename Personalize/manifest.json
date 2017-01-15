@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Personalize",
+  "description": "This extension allows you to customise your new tab.",
+  "version": "1.0",  
+  "icons":{
+    "64":"icon.png",
+    "32":"icon.png",
+    "16":"icon.png",
+    "128":"icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
+  "offline_enabled": true,
+  "browser_action": {
+  "default_icon": "icon.png", // optional
+  "default_title": "Personalized",      // optional; shown in tooltip
+  "default_popup": "popup.html"        // optional
+ }
+}
