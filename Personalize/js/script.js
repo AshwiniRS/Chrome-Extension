@@ -4,7 +4,7 @@ $(function(){
 $.get('quotes.txt', function(data) {
    var quotes = data.split("\n");
    var randLineNum = Math.floor(Math.random() * (quotes.length-1));
-    alert(randLineNum);
+   
    //alert(quotes[randLineNum]);
 //***************** To iterate on file **********************    
     
@@ -32,4 +32,13 @@ $('#focus').keyup(function(e){
     }
 });
 
+    
+//todo button
+   $('#todobtn').on('click', function(event) {        
+        $('#todoframe').toggle();
+        
+   });
+
+
+    
 });

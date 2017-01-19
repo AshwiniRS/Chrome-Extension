@@ -23,10 +23,10 @@ function clock(){
     document.getElementById('min').innerHTML = m;
     document.getElementById('sec').innerHTML = s;
     document.getElementById('time').innerHTML = day;
-    document.getElementById(''+daysofweek[daytoday]+'').style.color = '#fff';
-    document.getElementById('day').innerHTML = date;
-    document.getElementById('month').innerHTML = month[mon];
-    document.getElementById('year').innerHTML = year;
+//    document.getElementById(''+daysofweek[daytoday]+'').style.color = '#fff';
+//    document.getElementById('day').innerHTML = date;
+//    document.getElementById('month').innerHTML = month[mon];
+//    document.getElementById('year').innerHTML = year;
 
 }
 var inter = setInterval(clock,400);
